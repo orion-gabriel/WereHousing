@@ -15,7 +15,7 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('main');
 });
 
 //idk dibawah buat url2 nyas
