@@ -17,5 +17,7 @@ class HomeController extends Controller
     }
     public function index_home(){
         return view('main');
+        // ->with('products', $products);
     }
+    
 }
