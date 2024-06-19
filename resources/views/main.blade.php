@@ -78,10 +78,9 @@
     </div>
     <div class="flex justify-center">
         <div class="col-auto content-center">
-             {{-- @if (collect()->isEmpty())
-                <div class="text-3xl font-bold w-full text-gray-700 bg-gray-500">No data found</div>
-            @else --}}
-                @foreach ($products as $product)
+             {{-- @if ($products)
+             {{ dd($products) }} --}}
+             {{-- @foreach ($products as $product)
                 <div class="col">
                     <div class="card h-100 text-black bg-light mb-3" style="width: 100%">
                         <img class="card-img-top" src="{{asset('storage/images/'.$product->image)}}" alt="Image Not Found" style="width: 100%; height:70%">
@@ -94,6 +93,8 @@
                     </div>
                 </div>
                 @endforeach
+             @else
+             <div class="text-3xl font-bold w-full text-gray-700 bg-gray-500">No data found</div> --}}
             {{-- @endif --}}
         </div>
     </div>
